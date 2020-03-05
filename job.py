@@ -30,8 +30,3 @@ for x in range(len(lista_elemento)):
             if(lista_elemento[x-1].page !='checkout'):
                 arquivo_output = open('./output/abandoned-carts.json','a')
                 arquivo_output.write('{"timestamp":"%s","customer":"%s","product":"%s"}\n'% (str(lista_elemento[x-1].timestamp),lista_elemento[x-1].customer,lista_elemento[x-1].product))
-
-
-
-
-
